@@ -53,3 +53,61 @@ on console.log
 </div>
  
  
+
+ <!-- Javascript Datatype: -->
+<h2>Javascript Datatype:</h2>
+
+<div>
+  <h3>Example 1 :</h3>
+  <p>true + false</p>
+  <p>Answer: 1</p>
+  <p>Why: true is treated as 1 and false as 0, so 1 + 0 = 1</p>
+</div>
+
+<div>
+  <h3>Example 2 :</h3>
+  <p>null + 1</p>
+  <p>Answer: 1</p>
+  <p>Why: null is converted to 0 in numeric operations</p>
+</div>
+
+<div>
+  <h3>Example 3 :</h3>
+  <p>"12" + 12</p>
+  <p>Answer: "1212"</p>
+  <p>Why: the + operator performs string concatenation</p>
+</div>
+
+<div>
+  <h3>Example 4 :</h3>
+  <p>!!undefined</p>
+  <p>Answer: false</p>
+  <p>Why: undefined is a falsy value and !! converts it to boolean</p>
+</div>
+
+<div>
+  <h3>Example 5 :</h3>
+  <p>"12" - 1</p>
+  <p>Answer: 11</p>
+  <p>Why: the - operator converts the string into a number</p>
+</div>
+
+<div>
+  <p>Why typeof NaN --> number</p>
+  <p>Answer: typeof NaN = "number"</p>
+  <p>Why: NaN is the result of a failed numeric operation</p>
+  <p>Example: "hello" - 5 --> NaN</p>
+</div>
+
+<div>
+  <p>Undefined vs Null</p>
+  <p>let x;</p>
+  <p>console.log(x);</p>
+  <p>Output: undefined</p>
+
+  <p>let y = null;</p>
+  <p>console.log(y);</p>
+  <p>Output: null</p>
+
+  <p>Difference: undefined means a variable has been declared but not assigned a value, while null means an intentional empty value</p>
+</div>
