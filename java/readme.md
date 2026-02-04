@@ -906,8 +906,7 @@ so they can be called before definition.
 
 
 
-
-<!-- ======================================= array examples ==================================================== -->
+array examples 
 
 <!-- ================= Array Method : push, pop, swift, unswift, splice, slice, reverse ================= -->
 
