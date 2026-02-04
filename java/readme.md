@@ -902,3 +902,459 @@ Function declarations are fully hoisted,
 so they can be called before definition.
 </p>
 </div>
+
+
+
+
+
+<!-- ======================================= array examples ==================================================== -->
+
+<!-- ================= Array Method : push, pop, swift, unswift, splice, slice, reverse ================= -->
+
+<!-- ================= Q1 ================= -->
+<p><b>Q1. push()</b></p>
+<p>You are building a to-do app. Add a new task 'Buy milk' to the tasks array.</p>
+
+<pre>
+let tasks = ['Wake up', 'Brush teeth'];
+tasks.push('Buy milk');
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+['Wake up','Brush teeth','Buy milk']
+</p>
+
+<p><b>Why:</b></p>
+<p>
+push() array ke end me new element add karta hai.
+</p>
+
+
+<!-- ================= Q2 ================= -->
+<p><b>Q2. pop()</b></p>
+<p> Remove the last notification from the notifications array.</p>
+
+<pre>
+let notifications = ['Email', 'Message', 'Reminder'];
+notifications.pop();
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+['Email','Message']
+</p>
+
+<p><b>Why:</b></p>
+<p>
+pop() last element remove karta hai.
+</p>
+
+
+<!-- ================= Q3 ================= -->
+<p><b>Q3. shift()</b></p>
+<p>A queue system removes the first customer. Remove the first customer.</p>
+
+<pre>
+let customers = ['Customer1','Customer2','Customer3'];
+customers.shift();
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+['Customer2','Customer3']
+</p>
+
+<p><b>Why:</b></p>
+<p>
+shift() first element delete karta hai.
+</p>
+
+
+<!-- ================= Q4 ================= -->
+<p><b>Q4. unshift()</b></p>
+<p> A new song is added to the beginning of the playlist.</p>
+
+<pre>
+let playlist = ['Song B','Song C'];
+playlist.unshift('Song A');
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+['Song A','Song B','Song C']
+</p>
+
+<p><b>Why:</b></p>
+<p>
+unshift() starting me element add karta hai.
+</p>
+
+
+<!-- ================= Q5 ================= -->
+<p><b>Q5. splice()</b></p>
+<p>In a classroom list, remove 'Alex' and add 'John' and 'Sara' in the same position.</p>
+
+<pre>
+let students = ['Mike','Alex','Emma','Sophia'];
+students.splice(1,1,'John','Sara');
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+['Mike','John','Sara','Emma','Sophia']
+</p>
+
+<p><b>Why:</b></p>
+<p>
+Alex remove hua aur uski jagah John aur Sara aaye.
+</p>
+
+
+<!-- ================= Q6 ================= -->
+<p><b>Q6. splice()</b></p>
+<p>From the menu, remove 2 items starting from index 1.</p>
+
+<pre>
+let menu = ['Burger','Pizza','Pasta','Salad'];
+menu.splice(1,2);
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+['Burger','Salad']
+</p>
+
+<p><b>Why:</b></p>
+<p>
+Index 1 se 2 items delete hue.
+</p>
+
+
+<!-- ================= Q7 ================= -->
+<p><b>Q7. slice()</b></p>
+<p>Create a new array that contains only weekend days.</p>
+
+<pre>
+let days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+let weekend = days.slice(5);
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+['Saturday','Sunday']
+</p>
+
+<p><b>Why:</b></p>
+<p>
+slice() new array banata hai, original change nahi hota.
+</p>
+
+
+<!-- ================= Q8 ================= -->
+<p><b>Q8. reverse()</b></p>
+<p>Reverse the order of levels in a game.</p>
+
+<pre>
+let levels = ['Easy','Medium','Hard'];
+levels.reverse();
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+['Hard','Medium','Easy']
+</p>
+
+<p><b>Why:</b></p>
+<p>
+reverse() array ko ulta kar deta hai.
+</p>
+
+
+<!-- ================= Q9 ================= -->
+<p><b>Q9. sort()</b></p>
+<p>Sort the scores in ascending order.</p>
+
+<pre>
+let scores = [45,12,78,34,89];
+scores.sort((a,b)=>a-b);
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+[12,34,45,78,89]
+</p>
+
+<p><b>Why:</b></p>
+<p>
+Compare function number sorting ke liye use hota hai.
+</p>
+
+
+<!-- ================= Q10 ================= -->
+<p><b>Q10. sort() numbers</b></p>
+<p>Sort the prices from lowest to highest.</p>
+
+<pre>
+let prices = [199,49,999,299,149];
+prices.sort((a,b)=>a-b);
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+[49,149,199,299,999]
+</p>
+
+<p><b>Why:</b></p>
+<p>
+Without compare function galat sort hota.
+</p>
+
+
+<!-- ================= Q11 ================= -->
+<p><b>Q11. slice()</b></p>
+<p>From the array, create a new array of the first 3 items WITHOUT changing the original array.</p>
+
+<pre>
+let products = ['Laptop','Phone','Tablet','Monitor','Keyboard'];
+let first3 = products.slice(0,3);
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+['Laptop','Phone','Tablet']
+</p>
+
+<p><b>Why:</b></p>
+<p>
+slice() original array ko change nahi karta.
+</p>
+
+
+<!-- ================= Q12 ================= -->
+<p><b>Q12. splice()</b></p>
+<p>In the array below:
+// 1. Remove 'Blue'
+// 2. Add 'Purple' and 'Orange' at the same position</p>
+
+<pre>
+let colors = ['Red','Green','Blue','Yellow'];
+colors.splice(2,1,'Purple','Orange');
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+['Red','Green','Purple','Orange','Yellow']
+</p>
+
+<p><b>Why:</b></p>
+<p>
+Blue remove hua aur naye colors add hue.
+</p>
+
+
+<!-- ================= Q13 ================= -->
+<p><b>Q13. reverse + push</b></p>
+<p> Reverse the array and then add 'Final Step' at the end.</p>
+
+<pre>
+let steps = ['Step 1','Step 2','Step 3'];
+steps.reverse();
+steps.push('Final Step');
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+['Step 3','Step 2','Step 1','Final Step']
+</p>
+
+<p><b>Why:</b></p>
+<p>
+Pehle reverse hua fir push hua.
+</p>
+
+
+<!-- ================= Q14 ================= -->
+<p><b>Q14. sort strings</b></p>
+<p> Sort names alphabetically, ignoring case sensitivity.</p>
+
+<pre>
+let names = ['alice','Bob','charlie','David'];
+names.sort((a,b)=>a.toLowerCase().localeCompare(b.toLowerCase()));
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+['alice','Bob','charlie','David']
+</p>
+
+<p><b>Why:</b></p>
+<p>
+Case ignore karke sort hota.
+</p>
+
+
+<!-- ================= Q15 ================= -->
+<p><b>Q15. Combination Question</b></p>
+<p>You are managing a movie watchlist:
+ 1. Add 'Inception'
+ 2. Remove the first movie
+ 3. Sort the list alphabetically</p>
+
+<pre>
+let movies = ['Avatar','Titanic','Gladiator'];
+movies.push('Inception');
+movies.shift();
+movies.sort();
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+['Gladiator','Inception','Titanic']
+</p>
+
+<p><b>Why:</b></p>
+<p>
+Push, shift, sort teenon use hue.
+</p>
+
+
+<!-- ================= Q16 ================= -->
+<p><b>Q16. splice() return value</b></p>
+<p> What does the splice method return in this case?</p>
+
+<pre>
+let nums1 = [1,2,3,4];
+let removed = nums1.splice(1,2);
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+Removed: [2,3]
+</p>
+
+<p><b>Why:</b></p>
+<p>
+splice removed elements return karta hai.
+</p>
+
+
+<!-- ================= Q17 ================= -->
+<p><b>Q17. slice immutability check</b></p>
+<p>After executing slice, does the original array change?</p>
+
+<pre>
+let nums2 = [10,20,30,40];
+let result = nums2.slice(1,3);
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+Result: [20,30]
+<br>nums2 unchanged
+</p>
+
+<p><b>Why:</b></p>
+<p>
+slice non-mutating hai.
+</p>
+
+
+<!-- ================= Q19 ================= -->
+<p><b>Q19. reverse mutation</b></p>
+<p>After reversing, what happens to the original array reference?</p>
+
+<pre>
+let letters = ['a','b','c'];
+let reversed = letters.reverse();
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+['c','b','a']
+</p>
+
+<p><b>Why:</b></p>
+<p>
+reverse original array change karta hai.
+</p>
+
+
+<!-- ================= Q21 ================= -->
+<p><b>Q21. splice deleteCount 0</b></p>
+<p>What happens if deleteCount is 0?</p>
+
+<pre>
+let arr = ['x','y','z'];
+arr.splice(1,0,'new');
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+['x','new','y','z']
+</p>
+
+<p><b>Why:</b></p>
+<p>
+0 means delete nahi, sirf insert.
+</p>
+
+
+<!-- ================= Q23 ================= -->
+<p><b>Q23. slice negative</b></p>
+<p> What elements are returned?</p>
+
+<pre>
+let values = [100,200,300,400,500];
+let sliced = values.slice(-3,-1);
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+[300,400]
+</p>
+
+<p><b>Why:</b></p>
+<p>
+Negative index end se count karta hai.
+</p>
+
+
+<!-- ================= Q24 ================= -->
+<p><b>Q24. slice vs splice</b></p>
+<p>Which method would you use if you want to:
+// a. Update the original array
+// b. Keep the original array unchanged</p>
+
+<p><b>Ans:</b></p>
+<p>
+a. splice()<br>
+b. slice()
+</p>
+
+<p><b>Why:</b></p>
+<p>
+splice change karta hai, slice nahi.
+</p>
+
+
+<!-- ================= Q25 ================= -->
+<p><b>Q25. Chained methods</b></p>
+<p>What is the final value of arr?</p>
+
+<pre>
+let arr2 = [1,2,3];
+arr2.push(arr2.shift());
+</pre>
+
+<p><b>Ans:</b></p>
+<p>
+[2,3,1]
+</p>
+
+<p><b>Why:</b></p>
+<p>
+shift first element hata kar push me daal deta hai.
+</p>
+
+
